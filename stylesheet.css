@@ -1,0 +1,140 @@
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+#home {
+  font-size:25px;
+  margin-top: 8px;
+  margin-left: 10px;
+  display:inline-block;
+}
+
+#linkinbasso::after {
+  bottom: 0;
+  content: "ciao";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#linkinbasso:hover::after {
+  font-family: Monarch;
+  width: 100%;
+  left: 0;
+}
+
+.underbar{
+  width: 0;
+  height: 5px;
+  background: rgba(100,100,200,0);
+  //left: -50px;
+  top: 20px;
+  position: absolute;
+  -webkit-transition: 0.5s ease;
+}
+
+a:link {
+  color: #fffcfd;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #fffcfd;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7b7ab8;
+}
+
+/* selected link */
+a:active {
+  color: #7b7ab8;
+}
+
+/* a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+} */
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header {
+  margin:auto;
+  width:25%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -1;
+ }
+
+ /* Add some content at the bottom of the video/page */
+ .content {
+   position: fixed;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   color: #f1f1f1;
+   width: 100%;
+   padding: 20px;
+ }
+
+ /* Style the button used to pause/play the video */
+ #myBtn {
+   width: 200px;
+   font-size: 18px;
+   padding: 10px;
+   border: none;
+   background: #000;
+   color: #fff;
+   cursor: pointer;
+ }
+
+ #myBtn:hover {
+   background: #ddd;
+   color: black;
+ }
+
+ #logo {
+  transform: scale(0.5, 0.5);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+ }
+
+ @font-face {
+  font-family: Proxima Nova;
+  src: url(assets_aboutus/ProximaNova-Regular.otf);
+}
+
+@font-face {
+ font-family: Monarch;
+ src: url(assets_aboutus/Monarch_c_Jacob_Wise.otf);
+}
